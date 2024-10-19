@@ -1,0 +1,11 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "download-deps": "mkdir -p vendor && cp node_modules/jquery/dist/jquery.min.js vendor/jquery.min.js && cp node_modules/bootstrap/dist/css/bootstrap.min.css vendor/bootstrap.min.css && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js vendor/bootstrap.bundle.min.js && cp node_modules/metismenu/dist/metisMenu.min.css vendor/metisMenu.min.css && cp node_modules/metismenu/dist/metisMenu.min.js vendor/metisMenu.min.js && cp node_modules/@fortawesome/fontawesome-free/css/all.min.css vendor/all.min.css && cp node_modules/startbootstrap-sb-admin-2/css/sb-admin-2.min.css vendor/sb-admin-2.min.css && cp node_modules/startbootstrap-sb-admin-2/js/sb-admin-2.min.js vendor/sb-admin-2.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
