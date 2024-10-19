@@ -1,0 +1,25 @@
+name: Download dependencies
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  download-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Download dependencies
+        run: npm run download-deps
+
+      - name: Upload vendor folder as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: vendor
+          path: vendor
